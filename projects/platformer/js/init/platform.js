@@ -26,6 +26,10 @@
     platform.init = function (game) {
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
+        platform.create(255, 300);
+        platform.create(10, 25);
+        platform.create(420, 380);
+        platform.create(620, 320);
         
         /*
          * ground : here, we create a floor. Given the width of of the platform 
@@ -33,7 +37,8 @@
          * bottom of the game.
          */
         platform.create(0, game.world.height - 32, 3, 2);
-
+        platform.create(0, game.world.height - 45, 8, 4);
+        platform.create(0, game.world.height - 18, 7, 1);
         // example:
         platform.create(400, 460);
         platform.create(500, 200);
